@@ -76,3 +76,6 @@ console.log("value of y: ", y);   //outputs -4
 var num: number = -2
 var result = num > 0 ? "positive" : "non-positive"
 console.log(result)
+            //Type of Operator
+var num = "12"
+console.log(typeof num);   //output: number
