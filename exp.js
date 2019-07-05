@@ -60,14 +60,55 @@ var obj = new Numbers();
 console.log("Global num: " + obj.num_val)
 
 */
-var x = 4;
+/*
+var x: number = 4
 var y = -x;
-console.log("value of x: ", x); //outputs 4 
-console.log("value of y: ", y); //outputs -4
-//Conditonal Statement
-var num = -2;
-var result = num > 0 ? "positive" : "non-positive";
-console.log(result);
-//Type of Operator
-var num = "12";
-console.log(typeof num); //output: number
+console.log("value of x: ", x);   //outputs 4
+console.log("value of y: ", y);   //outputs -4
+
+*/
+/*
+            //Conditonal Statement
+var num: number = -2
+var result = num > 0 ? "positive" : "non-positive"
+console.log(result)
+            //Type of Operator
+var num = "12"
+console.log(typeof num);   //output: number
+
+*/
+/*              //function with optional parameter concept
+function disp_ditl(id:number,name:string,mail_id?:string)
+{
+  console.log("id:-", id)
+  console.log("name: ", name)
+  if(mail_id!=undefined)
+  {
+      console.log("email_id:" ,mail_id)
+  }
+}
+disp_ditl(123,"ajay")
+disp_ditl(123,"ak","ajay014yadav@gmail.com")
+*/
+/*
+            //Rest Function
+function addNumbers(...nums: number[]) {
+    var i;
+    var sum: number = 0;
+
+    for (i = 0; i < nums.length; i++) {
+        sum = sum + nums[i];
+    }
+    console.log("sum of the numbers", sum)
+}
+addNumbers(1, 2, 3)
+addNumbers(10, 10, 10, 10, 10)
+*/
+//Default Parameter  example
+function cal_disc(price, rate) {
+    if (rate === void 0) { rate = 0.50; }
+    var discount = price * rate;
+    console.log("discount ", discount);
+}
+cal_disc(100);
+cal_disc(1000, 0.3);
