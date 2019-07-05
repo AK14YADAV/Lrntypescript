@@ -123,7 +123,7 @@ cal_disc(1000,0.3)
 */
 
 //Anonymous Function Example
-var msg=function(){
-    console.log("hello anonymous function")
-}
-msg()
+var msg = function (a: number, b: number) {
+    return a * b
+};
+console.log(msg(10, 20));
