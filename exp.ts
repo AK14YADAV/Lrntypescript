@@ -120,10 +120,37 @@ function cal_disc(price:number,rate:number=0.50)
 cal_disc(100)
 cal_disc(1000,0.3)
 
-*/
+
 
 //Anonymous Function Example
 var msg = function (a: number, b: number) {
     return a * b
 };
 console.log(msg(10, 20));
+
+//Anonymous Recursive function
+(function () {
+    var x = "Hello!!";
+    console.log(x)
+})()  
+
+//Lambda Function
+var foo = (x: number) => 10 + x
+console.log(foo(100))  
+
+*/
+
+//Parameter type interface
+var msg=x=>
+{
+    if(typeof x=="number")
+    {
+        console.log(x+" is numberic")
+    }
+    if(typeof x=="string")
+    {
+        console.log(x,"string type")
+    }
+}
+msg(11)
+msg("hello")
