@@ -110,7 +110,7 @@ function addNumbers(...nums: number[]) {
 }
 addNumbers(1, 2, 3)
 addNumbers(10, 10, 10, 10, 10)
-*/
+
             //Default Parameter  example
 function cal_disc(price:number,rate:number=0.50)
 {
@@ -119,3 +119,11 @@ function cal_disc(price:number,rate:number=0.50)
 }
 cal_disc(100)
 cal_disc(1000,0.3)
+
+*/
+
+//Anonymous Function Example
+var msg=function(){
+    console.log("hello anonymous function")
+}
+msg()

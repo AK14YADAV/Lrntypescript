@@ -103,12 +103,19 @@ function addNumbers(...nums: number[]) {
 }
 addNumbers(1, 2, 3)
 addNumbers(10, 10, 10, 10, 10)
-*/
-//Default Parameter  example
-function cal_disc(price, rate) {
-    if (rate === void 0) { rate = 0.50; }
-    var discount = price * rate;
-    console.log("discount ", discount);
+
+            //Default Parameter  example
+function cal_disc(price:number,rate:number=0.50)
+{
+    var discount=price*rate;
+    console.log("discount ",discount)
 }
-cal_disc(100);
-cal_disc(1000, 0.3);
+cal_disc(100)
+cal_disc(1000,0.3)
+
+*/
+//Anonymous Function Example
+var msg = function () {
+    console.log("hello anonymous function");
+};
+msg();
